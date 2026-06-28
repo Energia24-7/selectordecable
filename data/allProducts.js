@@ -7,103 +7,49 @@ import { transmissionProducts } from './transmission.js';
 
 export const allProducts = [
 
-```
-...buildingProducts,
-
-...renewableProducts,
-
-...miningProducts,
-
-...telecomProducts,
-
-...powerProducts,
-
-...transmissionProducts
-```
+    ...buildingProducts,
+    ...renewableProducts,
+    ...miningProducts,
+    ...telecomProducts,
+    ...powerProducts,
+    ...transmissionProducts
 
 ];
 
-export function findProductsByTag(searchText) {
-
-```
-const query = searchText.toLowerCase();
-
-return allProducts.filter(product => {
-
-    if (!product.tags)
-        return false;
-
-    return product.tags.some(tag =>
-        tag.toLowerCase().includes(query)
-    );
-
-});
-```
-
-}
-
 export function smartSearch(searchText) {
 
-```
-const words = searchText
-    .toLowerCase()
-    .split(" ")
-    .filter(w => w.length > 2);
+    const query = searchText.toLowerCase();
 
-const results = [];
+    return allProducts
+        .map(product => {
 
-allProducts.forEach(product => {
+            let score = 0;
 
-    let score = 0;
+            if (product.name.toLowerCase().includes(query))
+                score += 100;
 
-    words.forEach(word => {
+            if (product.tags) {
 
-        if (!product.tags)
-            return;
+                product.tags.forEach(tag => {
 
-        product.tags.forEach(tag => {
+                    if (
+                        query.includes(tag) ||
+                        tag.includes(query)
+                    ) {
+                        score += 25;
+                    }
 
-            if (
-                tag.toLowerCase()
-                   .includes(word)
-            ) {
-                score += 10;
+                });
+
             }
 
-        });
+            return {
+                product,
+                score
+            };
 
-        if (
-            product.name &&
-            product.name.toLowerCase()
-            .includes(word)
-        ) {
-            score += 20;
-        }
-
-        if (
-            product.category &&
-            product.category.toLowerCase()
-            .includes(word)
-        ) {
-            score += 15;
-        }
-
-    });
-
-    if (score > 0) {
-
-        results.push({
-            score,
-            product
-        });
-
-    }
-
-});
-
-return results.sort(
-    (a,b) => b.score - a.score
-);
-```
+        })
+        .filter(item => item.score > 0)
+        .sort((a, b) => b.score - a.score);
 
 }
