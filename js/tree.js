@@ -3,170 +3,200 @@ from '../data/allProducts.js';
 
 export function generateTree() {
 
-```
-const treeContainer =
-    document.getElementById('tree');
+    const treeContainer =
+        document.getElementById('tree');
 
-if (!treeContainer)
-    return;
-
-const grouped = {};
-
-allProducts.forEach(product => {
-
-    if (!grouped[product.family]) {
-
-        grouped[
-            product.family
-        ] = {};
-
+    if (!treeContainer) {
+        return;
     }
 
-    if (
-        !grouped[
-            product.family
-        ][
-            product.category
-        ]
-    ) {
+    const grouped = {};
 
-        grouped[
-            product.family
-        ][
-            product.category
-        ] = [];
+    allProducts.forEach(product => {
 
-    }
+        if (!grouped[product.family]) {
+            grouped[product.family] = {};
+        }
 
-    grouped[
-        product.family
-    ][
-        product.category
-    ].push(product);
+        if (!grouped[product.family][product.category]) {
+            grouped[product.family][product.category] = [];
+        }
 
-});
+        grouped[product.family][product.category]
+            .push(product);
 
-treeContainer.innerHTML = '';
+    });
 
-Object.keys(grouped)
-    .sort()
-    .forEach(family => {
+    treeContainer.innerHTML = '';
 
-        const familyNode =
-            document.createElement('details');
+    Object.keys(grouped)
+        .sort()
+        .forEach(family => {
 
-        familyNode.open = false;
+            const familyNode =
+                document.createElement('details');
 
-        const familyTitle =
-            document.createElement('summary');
+            familyNode.classList.add(
+                'family-node'
+            );
 
-        familyTitle.textContent =
-            family;
+            const familyTitle =
+                document.createElement('summary');
 
-        familyNode.appendChild(
-            familyTitle
-        );
+            familyTitle.textContent =
+                family;
 
-        Object.keys(grouped[family])
-            .sort()
-            .forEach(category => {
+            familyNode.appendChild(
+                familyTitle
+            );
 
-                const categoryNode =
-                    document.createElement('details');
+            Object.keys(grouped[family])
+                .sort()
+                .forEach(category => {
 
-                const categoryTitle =
-                    document.createElement('summary');
+                    const categoryNode =
+                        document.createElement(
+                            'details'
+                        );
 
-                categoryTitle.textContent =
-                    category;
+                    const categoryTitle =
+                        document.createElement(
+                            'summary'
+                        );
 
-                categoryNode.appendChild(
-                    categoryTitle
-                );
-
-                grouped[
-                    family
-                ][
-                    category
-                ].forEach(product => {
-
-                    const item =
-                        document.createElement('div');
-
-                    item.className =
-                        'tree-item';
-
-                    item.textContent =
-                        product.name;
-
-                    item.addEventListener(
-                        'click',
-                        () => showProduct(product)
-                    );
+                    categoryTitle.textContent =
+                        category;
 
                     categoryNode.appendChild(
-                        item
+                        categoryTitle
+                    );
+
+                    grouped[family][category]
+                        .forEach(product => {
+
+                            const item =
+                                document.createElement(
+                                    'div'
+                                );
+
+                            item.className =
+                                'tree-item';
+
+                            item.textContent =
+                                product.name;
+
+                            item.addEventListener(
+                                'click',
+                                () => {
+                                    showProduct(
+                                        product
+                                    );
+                                }
+                            );
+
+                            categoryNode
+                                .appendChild(item);
+
+                        });
+
+                    familyNode.appendChild(
+                        categoryNode
                     );
 
                 });
 
-                familyNode.appendChild(
-                    categoryNode
-                );
+            treeContainer.appendChild(
+                familyNode
+            );
 
-            });
-
-        treeContainer.appendChild(
-            familyNode
-        );
-
-    });
-```
+        });
 
 }
 
 function showProduct(product) {
 
-```
-const panel =
-    document.getElementById(
-        'info'
-    );
+    const panel =
+        document.getElementById('info');
 
-panel.innerHTML = `
+    if (!panel) {
+        return;
+    }
 
-    <div class="product-card">
+    const installation =
+        product.installation
+            ? product.installation.join(', ')
+            : '-';
 
-        <h2>${product.name}</h2>
+    const applications =
+        product.applications
+            ? product.applications.join(', ')
+            : '-';
 
-        <p>
-            <strong>Familia:</strong>
-            ${product.family}
-        </p>
+    const tags =
+        product.tags
+            ? product.tags.join(', ')
+            : '-';
 
-        <p>
-            <strong>Categoría:</strong>
-            ${product.category}
-        </p>
+    panel.innerHTML = `
 
-        <p>
-            <strong>Conductor:</strong>
-            ${product.conductor || '-'}
-        </p>
+        <div class="product-card">
 
-        <p>
-            <strong>Aislamiento:</strong>
-            ${product.insulation || '-'}
-        </p>
+            <h2>${product.name}</h2>
 
-        <p>
-            <strong>Tensión:</strong>
-            ${product.voltage || '-'}
-        </p>
+            <hr>
 
-    </div>
+            <p>
+                <strong>Familia:</strong>
+                ${product.family || '-'}
+            </p>
 
-`;
-```
+            <p>
+                <strong>Categoría:</strong>
+                ${product.category || '-'}
+            </p>
+
+            <p>
+                <strong>Conductor:</strong>
+                ${product.conductor || '-'}
+            </p>
+
+            <p>
+                <strong>Aislamiento:</strong>
+                ${product.insulation || '-'}
+            </p>
+
+            <p>
+                <strong>Tensión:</strong>
+                ${product.voltage || '-'}
+            </p>
+
+            <p>
+                <strong>Temperatura:</strong>
+                ${product.temperature || '-'}
+            </p>
+
+            <p>
+                <strong>Instalación:</strong>
+                ${installation}
+            </p>
+
+            <p>
+                <strong>Aplicaciones:</strong>
+                ${applications}
+            </p>
+
+            <p>
+                <strong>Tags:</strong>
+                ${tags}
+            </p>
+
+            <p>
+                <strong>Brochure:</strong>
+                ${product.brochure || '-'}
+            </p>
+
+        </div>
+
+    `;
 
 }
