@@ -1,280 +1,292 @@
 export const transmissionProducts = [
 
 {
-id: "AAC",
+    id: "AAC",
 
-```
-family: "Transmisión y Distribución",
+    family: "Transmisión y Distribución",
 
-category: "Conductores Desnudos",
+    category: "Conductores Desnudos",
 
-name: "AAC - All Aluminum Conductor",
+    name: "AAC - All Aluminum Conductor",
 
-conductor: "Aluminio 1350",
+    conductor: "Aluminio 1350",
 
-voltage: "Según diseño de red",
+    installation: [
+        "Líneas aéreas",
+        "Distribución urbana"
+    ],
 
-installation: [
-    "Líneas aéreas",
-    "Distribución urbana"
-],
+    applications: [
+        "Redes de distribución",
+        "Alimentadores aéreos"
+    ],
 
-applications: [
-    "Redes de distribución",
-    "Alimentadores aéreos"
-],
+    tags: [
+        "aac",
+        "aluminio",
+        "linea aerea",
+        "distribucion"
+    ],
 
-tags: [
-    "aac",
-    "aluminio",
-    "linea aerea",
-    "distribucion"
-],
-
-brochure: "TD"
-```
-
+    brochure: "TD"
 },
 
 {
-id: "AAAC",
+    id: "AAAC",
 
-```
-family: "Transmisión y Distribución",
+    family: "Transmisión y Distribución",
 
-category: "Conductores Desnudos",
+    category: "Conductores Desnudos",
 
-name: "AAAC - All Aluminum Alloy Conductor",
+    name: "AAAC - All Aluminum Alloy Conductor",
 
-conductor: "Aleación de aluminio",
+    conductor: "Aleación de aluminio",
 
-installation: [
-    "Líneas aéreas",
-    "Ambientes corrosivos"
-],
+    installation: [
+        "Líneas aéreas",
+        "Ambientes corrosivos"
+    ],
 
-applications: [
-    "Distribución",
-    "Subtransmisión"
-],
+    applications: [
+        "Distribución",
+        "Subtransmisión"
+    ],
 
-tags: [
-    "aaac",
-    "aleacion",
-    "linea aerea",
-    "corrosion"
-],
+    tags: [
+        "aaac",
+        "aleacion",
+        "linea aerea",
+        "corrosion"
+    ],
 
-brochure: "TD"
-```
-
+    brochure: "TD"
 },
 
 {
-id: "ACSR",
+    id: "ACSR",
 
-```
-family: "Transmisión y Distribución",
+    family: "Transmisión y Distribución",
 
-category: "Conductores Desnudos",
+    category: "Conductores Desnudos",
 
-name: "ACSR",
+    name: "ACSR",
 
-conductor: "Aluminio reforzado con acero",
+    conductor: "Aluminio reforzado con acero",
 
-installation: [
-    "Transmisión",
-    "Subtransmisión"
-],
+    installation: [
+        "Transmisión",
+        "Subtransmisión"
+    ],
 
-applications: [
-    "Largas distancias",
-    "Altas cargas mecánicas"
-],
+    applications: [
+        "Largas distancias",
+        "Altas cargas mecánicas"
+    ],
 
-tags: [
-    "acsr",
-    "acero",
-    "transmision",
-    "linea aerea"
-],
+    tags: [
+        "acsr",
+        "acero",
+        "transmision",
+        "linea aerea"
+    ],
 
-brochure: "TD"
-```
-
+    brochure: "TD"
 },
 
 {
-id: "ACAR",
+    id: "ACAR",
 
-```
-family: "Transmisión y Distribución",
+    family: "Transmisión y Distribución",
 
-category: "Conductores Desnudos",
+    category: "Conductores Desnudos",
 
-name: "ACAR",
+    name: "ACAR",
 
-conductor: "Aluminio reforzado con aleación",
+    conductor: "Aluminio reforzado con aleación",
 
-installation: [
-    "Distribución",
-    "Subtransmisión"
-],
+    installation: [
+        "Distribución",
+        "Subtransmisión"
+    ],
 
-applications: [
-    "Líneas aéreas"
-],
+    applications: [
+        "Líneas aéreas"
+    ],
 
-tags: [
-    "acar",
-    "aluminio",
-    "aleacion",
-    "linea aerea"
-],
+    tags: [
+        "acar",
+        "aluminio",
+        "aleacion",
+        "linea aerea"
+    ],
 
-brochure: "TD"
-```
-
+    brochure: "TD"
 },
 
 {
-id: "OPGW-24",
+    id: "OPGW-24",
 
-```
-family: "Transmisión y Telecom",
+    family: "Transmisión y Telecom",
 
-category: "Cable de Guarda Óptico",
+    category: "Cable de Guarda Óptico",
 
-name: "OPGW 24 fibras",
+    name: "OPGW 24 fibras",
 
-conductor: "Aluminio + Acero",
+    conductor: "Acero y aluminio",
 
-fibers: 24,
+    fibers: 24,
 
-installation: [
-    "Líneas de transmisión"
-],
+    installation: [
+        "Líneas de transmisión"
+    ],
 
-applications: [
-    "Protección",
-    "SCADA",
-    "Telecomunicaciones"
-],
+    applications: [
+        "SCADA",
+        "Protección",
+        "Telecomunicaciones"
+    ],
 
-tags: [
-    "opgw",
-    "24 fibras",
-    "scada",
-    "transmision"
-],
+    tags: [
+        "opgw",
+        "24 fibras",
+        "fibra",
+        "scada",
+        "telecom"
+    ],
 
-brochure: "OPGW"
-```
-
+    brochure: "OPGW"
 },
 
 {
-id: "OPGW-48",
+    id: "OPGW-48",
 
-```
-family: "Transmisión y Telecom",
+    family: "Transmisión y Telecom",
 
-category: "Cable de Guarda Óptico",
+    category: "Cable de Guarda Óptico",
 
-name: "OPGW 48 fibras",
+    name: "OPGW 48 fibras",
 
-conductor: "Aluminio + Acero",
+    conductor: "Acero y aluminio",
 
-fibers: 48,
+    fibers: 48,
 
-installation: [
-    "Líneas de transmisión"
-],
+    installation: [
+        "Líneas de transmisión"
+    ],
 
-applications: [
-    "SCADA",
-    "Protección diferencial",
-    "Telecom"
-],
+    applications: [
+        "SCADA",
+        "Telecomunicaciones",
+        "Protección diferencial"
+    ],
 
-tags: [
-    "opgw",
-    "48 fibras",
-    "utility"
-],
+    tags: [
+        "opgw",
+        "48 fibras",
+        "fibra",
+        "scada"
+    ],
 
-brochure: "OPGW"
-```
-
+    brochure: "OPGW"
 },
 
 {
-id: "OPGW-96",
+    id: "OPGW-96",
 
-```
-family: "Transmisión y Telecom",
+    family: "Transmisión y Telecom",
 
-category: "Cable de Guarda Óptico",
+    category: "Cable de Guarda Óptico",
 
-name: "OPGW 96 fibras",
+    name: "OPGW 96 fibras",
 
-conductor: "Aluminio + Acero",
+    conductor: "Acero y aluminio",
 
-fibers: 96,
+    fibers: 96,
 
-installation: [
-    "Líneas EHV",
-    "Líneas HV"
-],
+    installation: [
+        "Líneas EHV",
+        "Líneas HV"
+    ],
 
-applications: [
-    "Backbone",
-    "Telecomunicaciones"
-],
+    applications: [
+        "Backbone",
+        "Telecomunicaciones"
+    ],
 
-tags: [
-    "opgw",
-    "96 fibras",
-    "backbone"
-],
+    tags: [
+        "opgw",
+        "96 fibras",
+        "backbone",
+        "fibra"
+    ],
 
-brochure: "OPGW"
-```
-
+    brochure: "OPGW"
 },
 
 {
-id: "ADSS-SPAN",
+    id: "ADSS",
 
-```
-family: "Transmisión y Telecom",
+    family: "Transmisión y Telecom",
 
-category: "Fibra Aérea",
+    category: "Fibra Óptica Aérea",
 
-name: "ADSS",
+    name: "ADSS",
 
-fiberType: "Monomodo",
+    conductor: "Fibra óptica",
 
-installation: [
-    "Postes",
-    "Líneas aéreas"
-],
+    installation: [
+        "Postes",
+        "Redes aéreas",
+        "Utilities"
+    ],
 
-applications: [
-    "FTTH",
-    "Operadores",
-    "Utilities"
-],
+    applications: [
+        "FTTH",
+        "Backbone",
+        "Operadores"
+    ],
 
-tags: [
-    "adss",
-    "fibra",
-    "poste"
-],
+    tags: [
+        "adss",
+        "fibra",
+        "aerea",
+        "ftth",
+        "telecom"
+    ],
 
-brochure: "OPGW"
-```
+    brochure: "OPGW"
+},
 
+{
+    id: "ADSS-UTILITY",
+
+    family: "Transmisión y Telecom",
+
+    category: "Fibra Óptica Aérea",
+
+    name: "ADSS Utility",
+
+    conductor: "Fibra óptica",
+
+    installation: [
+        "Líneas eléctricas",
+        "Postes"
+    ],
+
+    applications: [
+        "SCADA",
+        "Teleprotección",
+        "Backbone Utility"
+    ],
+
+    tags: [
+        "adss",
+        "utility",
+        "scada",
+        "fibra"
+    ],
+
+    brochure: "OPGW"
 }
 
 ];
