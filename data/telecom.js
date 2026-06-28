@@ -1,444 +1,97 @@
 export const telecomProducts = [
 
 {
-id: "UTP-CAT5E",
+    id: "CAT6",
 
-```
-family: "Telecomunicaciones",
+    family: "Telecomunicaciones",
 
-category: "LAN",
+    category: "Cobre",
 
-name: "Cable UTP Cat 5e",
+    name: "Cable CAT6",
 
-conductor: "Cobre sólido 24 AWG",
+    conductor: "Cobre",
 
-insulation: "HDPE",
+    voltage: "Datos",
 
-voltage: "No aplica",
+    installation: [
+        "Interior"
+    ],
 
-bandwidth: "100 MHz",
+    applications: [
+        "Ethernet",
+        "LAN"
+    ],
 
-installation: [
-    "Interior",
-    "Canalizaciones",
-    "Oficinas"
-],
+    tags: [
+        "cat6",
+        "ethernet",
+        "red",
+        "datos"
+    ],
 
-applications: [
-    "Ethernet 10/100/1000",
-    "VoIP",
-    "CCTV IP"
-],
-
-standards: [
-    "ANSI/TIA-568",
-    "ISO 11801"
-],
-
-tags: [
-    "cat5e",
-    "utp",
-    "ethernet",
-    "red",
-    "datos",
-    "internet",
-    "cctv"
-],
-
-brochure: "DIGITAL",
-
-image: "assets/cables/cat5e.jpg"
-```
-
+    brochure: "TELECOM"
 },
 
 {
-id: "UTP-CAT6",
+    id: "CAT6A",
 
-```
-family: "Telecomunicaciones",
+    family: "Telecomunicaciones",
 
-category: "LAN",
+    category: "Cobre",
 
-name: "Cable UTP Cat 6",
+    name: "Cable CAT6A",
 
-conductor: "Cobre sólido 23 AWG",
+    conductor: "Cobre",
 
-insulation: "HDPE",
+    voltage: "Datos",
 
-bandwidth: "250 MHz",
+    installation: [
+        "Interior"
+    ],
 
-installation: [
-    "Interior",
-    "Oficinas",
-    "Data Centers"
-],
+    applications: [
+        "10 Gigabit Ethernet"
+    ],
 
-applications: [
-    "Gigabit Ethernet",
-    "PoE",
-    "CCTV IP"
-],
+    tags: [
+        "cat6a",
+        "ethernet",
+        "10g"
+    ],
 
-tags: [
-    "cat6",
-    "utp",
-    "gigabit",
-    "ethernet",
-    "poe",
-    "red"
-],
-
-brochure: "DIGITAL",
-
-image: "assets/cables/cat6.jpg"
-```
-
+    brochure: "TELECOM"
 },
 
 {
-id: "UTP-CAT6A",
+    id: "FIBER-OS2",
 
-```
-family: "Telecomunicaciones",
+    family: "Telecomunicaciones",
 
-category: "LAN",
+    category: "Fibra Óptica",
 
-name: "Cable UTP Cat 6A",
+    name: "Fibra Óptica OS2",
 
-conductor: "Cobre sólido 23 AWG",
+    conductor: "Fibra Monomodo",
 
-insulation: "HDPE",
+    installation: [
+        "Interior",
+        "Exterior"
+    ],
 
-bandwidth: "500 MHz",
+    applications: [
+        "Backbone",
+        "FTTH",
+        "SCADA"
+    ],
 
-installation: [
-    "Data Center",
-    "Corporativo"
-],
+    tags: [
+        "fibra",
+        "os2",
+        "backbone",
+        "scada"
+    ],
 
-applications: [
-    "10 Gigabit Ethernet",
-    "PoE++"
-],
-
-tags: [
-    "cat6a",
-    "10gbe",
-    "ethernet",
-    "data center"
-],
-
-brochure: "DIGITAL",
-
-image: "assets/cables/cat6a.jpg"
-```
-
-},
-
-{
-id: "FUTP-CAT6",
-
-```
-family: "Telecomunicaciones",
-
-category: "LAN Blindada",
-
-name: "F/UTP Cat 6",
-
-conductor: "Cobre sólido",
-
-shielding: "Foil",
-
-bandwidth: "250 MHz",
-
-installation: [
-    "Ambientes industriales",
-    "Alta interferencia"
-],
-
-applications: [
-    "Redes industriales",
-    "Automatización"
-],
-
-tags: [
-    "futp",
-    "cat6",
-    "blindado",
-    "emi",
-    "rfi"
-],
-
-brochure: "DIGITAL",
-
-image: "assets/cables/futp-cat6.jpg"
-```
-
-},
-
-{
-id: "SFTP-CAT6A",
-
-```
-family: "Telecomunicaciones",
-
-category: "LAN Blindada",
-
-name: "S/FTP Cat 6A",
-
-conductor: "Cobre sólido",
-
-shielding: "Malla + Foil",
-
-bandwidth: "500 MHz",
-
-installation: [
-    "Industrial",
-    "Data Center"
-],
-
-applications: [
-    "10 Gigabit Ethernet",
-    "Alta inmunidad EMI"
-],
-
-tags: [
-    "sftp",
-    "cat6a",
-    "blindado",
-    "industrial"
-],
-
-brochure: "DIGITAL",
-
-image: "assets/cables/sftp-cat6a.jpg"
-```
-
-},
-
-{
-id: "FIBER-MM-OM3",
-
-```
-family: "Telecomunicaciones",
-
-category: "Fibra Óptica",
-
-name: "Fibra Multimodo OM3",
-
-fiberType: "50/125 µm",
-
-installation: [
-    "Backbone",
-    "Campus",
-    "Data Center"
-],
-
-applications: [
-    "10G Ethernet",
-    "40G Ethernet"
-],
-
-tags: [
-    "fibra",
-    "om3",
-    "multimodo",
-    "backbone"
-],
-
-brochure: "DIGITAL",
-
-image: "assets/cables/om3.jpg"
-```
-
-},
-
-{
-id: "FIBER-MM-OM4",
-
-```
-family: "Telecomunicaciones",
-
-category: "Fibra Óptica",
-
-name: "Fibra Multimodo OM4",
-
-fiberType: "50/125 µm",
-
-installation: [
-    "Data Center",
-    "Backbone"
-],
-
-applications: [
-    "10G",
-    "40G",
-    "100G"
-],
-
-tags: [
-    "om4",
-    "fibra",
-    "multimodo"
-],
-
-brochure: "DIGITAL",
-
-image: "assets/cables/om4.jpg"
-```
-
-},
-
-{
-id: "FIBER-SM-OS2",
-
-```
-family: "Telecomunicaciones",
-
-category: "Fibra Óptica",
-
-name: "Fibra Monomodo OS2",
-
-fiberType: "9/125 µm",
-
-installation: [
-    "Exterior",
-    "Backbone",
-    "FTTH"
-],
-
-applications: [
-    "Larga distancia",
-    "Operadores",
-    "Redes metropolitanas"
-],
-
-tags: [
-    "os2",
-    "monomodo",
-    "fibra",
-    "ftth"
-],
-
-brochure: "DIGITAL",
-
-image: "assets/cables/os2.jpg"
-```
-
-},
-
-{
-id: "ADSS",
-
-```
-family: "Telecomunicaciones",
-
-category: "Fibra Aérea",
-
-name: "ADSS",
-
-fiberType: "Monomodo",
-
-installation: [
-    "Líneas aéreas",
-    "Distribución"
-],
-
-applications: [
-    "Operadores",
-    "Utilities",
-    "FTTH"
-],
-
-tags: [
-    "adss",
-    "aereo",
-    "fibra",
-    "poste"
-],
-
-brochure: "OPGW",
-
-image: "assets/cables/adss.jpg"
-```
-
-},
-
-{
-id: "OPGW",
-
-```
-family: "Telecomunicaciones",
-
-category: "Fibra para Transmisión",
-
-name: "OPGW",
-
-conductor: "Acero + Aluminio",
-
-fiberType: "Monomodo",
-
-installation: [
-    "Líneas de transmisión"
-],
-
-applications: [
-    "Protección",
-    "Telecomunicaciones",
-    "SCADA",
-    "Utilities"
-],
-
-tags: [
-    "opgw",
-    "guard wire",
-    "transmision",
-    "fibra",
-    "subestacion",
-    "scada"
-],
-
-brochure: "OPGW",
-
-image: "assets/cables/opgw.jpg"
-```
-
-},
-
-{
-id: "FTTH-DROP",
-
-```
-family: "Telecomunicaciones",
-
-category: "FTTH",
-
-name: "Cable Drop FTTH",
-
-fiberType: "Monomodo G.657A",
-
-installation: [
-    "Última milla",
-    "Residencial"
-],
-
-applications: [
-    "Fibra al hogar"
-],
-
-tags: [
-    "ftth",
-    "drop",
-    "ultima milla",
-    "hogar"
-],
-
-brochure: "DIGITAL",
-
-image: "assets/cables/ftth-drop.jpg"
-```
-
+    brochure: "TELECOM"
 }
 
 ];
