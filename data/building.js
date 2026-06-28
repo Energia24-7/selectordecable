@@ -1,280 +1,393 @@
 export const buildingProducts = [
 
 {
-id: "THHN-THWN2",
+    id: "THHN-THWN2",
 
-```
-family: "Construcción",
+    family: "Construcción",
 
-category: "Conductores para edificaciones",
+    category: "Conductores para edificaciones",
 
-name: "THHN / THWN-2",
+    name: "THHN / THWN-2",
 
-conductor: "Cobre",
+    conductor: "Cobre",
 
-insulation: "PVC + Nylon",
+    insulation: "PVC + Nylon",
 
-voltage: "600 V",
+    voltage: "600 V",
 
-temperature: "90°C seco / 75°C húmedo",
+    temperature: "90°C seco / 75°C húmedo",
 
-installation: [
-    "Tubería EMT",
-    "Tubería PVC",
-    "Canalizaciones",
-    "Bandejas"
-],
+    installation: [
+        "Tubería EMT",
+        "Tubería PVC",
+        "Canalizaciones",
+        "Bandejas"
+    ],
 
-applications: [
-    "Residencial",
-    "Comercial",
-    "Industrial",
-    "Tableros eléctricos"
-],
+    applications: [
+        "Residencial",
+        "Comercial",
+        "Industrial",
+        "Tableros eléctricos"
+    ],
 
-standards: [
-    "UL 83",
-    "UL 1063",
-    "NTE INEN"
-],
+    standards: [
+        "UL 83",
+        "UL 1063"
+    ],
 
-tags: [
-    "thhn",
-    "thwn",
-    "edificaciones",
-    "cobre",
-    "600v",
-    "canalizacion",
-    "tuberia",
-    "tablero"
-],
+    tags: [
+        "thhn",
+        "thwn",
+        "cobre",
+        "edificaciones",
+        "tableros",
+        "canalizacion",
+        "600v"
+    ],
 
-brochure: "THHN-THWN2",
-
-image: "assets/cables/thhn.jpg"
-```
-
+    brochure: "THHN"
 },
 
 {
-id: "SUPERASTIC",
+    id: "THW",
 
-```
-family: "Construcción",
+    family: "Construcción",
 
-category: "Conductores flexibles",
+    category: "Conductores para edificaciones",
 
-name: "Superastic",
+    name: "THW",
 
-conductor: "Cobre flexible",
+    conductor: "Cobre",
 
-insulation: "PVC",
+    insulation: "PVC",
 
-voltage: "450/750 V",
+    voltage: "600 V",
 
-temperature: "70°C",
+    temperature: "75°C",
 
-installation: [
-    "Canalizaciones",
-    "Tableros",
-    "Equipos"
-],
+    installation: [
+        "Tuberías",
+        "Canalizaciones"
+    ],
 
-applications: [
-    "Residencial",
-    "Industrial ligera",
-    "Control interno"
-],
+    applications: [
+        "Residencial",
+        "Comercial"
+    ],
 
-tags: [
-    "superastic",
-    "flexible",
-    "cobre",
-    "450v",
-    "750v",
-    "cable flexible"
-],
+    tags: [
+        "thw",
+        "cobre",
+        "600v",
+        "vivienda"
+    ],
 
-brochure: "SUPERASTIC",
-
-image: "assets/cables/superastic.jpg"
-```
-
+    brochure: "CONSTRUCCION"
 },
 
 {
-id: "EXZHELLENT-GREEN-75",
+    id: "TW",
 
-```
-family: "Construcción",
+    family: "Construcción",
 
-category: "Libre de halógenos",
+    category: "Conductores para edificaciones",
 
-name: "Exzhellent Green 75°C",
+    name: "TW",
 
-conductor: "Cobre",
+    conductor: "Cobre",
 
-insulation: "LSZH",
+    insulation: "PVC",
 
-voltage: "600 V",
+    voltage: "600 V",
 
-temperature: "75°C",
+    temperature: "60°C",
 
-installation: [
-    "Edificios",
-    "Hospitales",
-    "Centros comerciales"
-],
+    installation: [
+        "Tuberías",
+        "Canalizaciones"
+    ],
 
-applications: [
-    "Evacuación segura",
-    "Baja emisión de humo",
-    "Ambientes públicos"
-],
+    applications: [
+        "Residencial"
+    ],
 
-tags: [
-    "lszh",
-    "halogen free",
-    "green",
-    "hospital",
-    "edificio",
-    "seguridad",
-    "bajo humo"
-],
+    tags: [
+        "tw",
+        "cobre",
+        "residencial",
+        "600v"
+    ],
 
-brochure: "EXZHELLENT",
-
-image: "assets/cables/exzhellent.jpg"
-```
-
+    brochure: "CONSTRUCCION"
 },
 
 {
-id: "THW",
+    id: "SUPERASTIC",
 
-```
-family: "Construcción",
+    family: "Construcción",
 
-category: "Conductores para edificaciones",
+    category: "Conductores flexibles",
 
-name: "THW",
+    name: "Superastic",
 
-conductor: "Cobre",
+    conductor: "Cobre flexible",
 
-insulation: "PVC",
+    insulation: "PVC",
 
-voltage: "600 V",
+    voltage: "450/750 V",
 
-temperature: "75°C",
+    temperature: "70°C",
 
-installation: [
-    "Tuberías",
-    "Canalizaciones"
-],
+    installation: [
+        "Canalizaciones",
+        "Tableros",
+        "Equipos"
+    ],
 
-applications: [
-    "Residencial",
-    "Comercial"
-],
+    applications: [
+        "Residencial",
+        "Comercial",
+        "Industrial"
+    ],
 
-tags: [
-    "thw",
-    "600v",
-    "cobre",
-    "edificaciones"
-],
+    tags: [
+        "superastic",
+        "flexible",
+        "cobre",
+        "control",
+        "tablero"
+    ],
 
-brochure: "BUILDING",
-
-image: "assets/cables/thw.jpg"
-```
-
+    brochure: "SUPERASTIC"
 },
 
 {
-id: "TW",
+    id: "SUPERASTIC-PLUS",
 
-```
-family: "Construcción",
+    family: "Construcción",
 
-category: "Conductores para edificaciones",
+    category: "Conductores flexibles",
 
-name: "TW",
+    name: "Superastic Plus",
 
-conductor: "Cobre",
+    conductor: "Cobre flexible",
 
-insulation: "PVC",
+    insulation: "PVC",
 
-voltage: "600 V",
+    voltage: "450/750 V",
 
-temperature: "60°C",
+    temperature: "90°C",
 
-installation: [
-    "Tuberías",
-    "Canalizaciones"
-],
+    installation: [
+        "Tableros",
+        "Canalizaciones",
+        "Equipos"
+    ],
 
-applications: [
-    "Residencial"
-],
+    applications: [
+        "Industrial",
+        "Comercial"
+    ],
 
-tags: [
-    "tw",
-    "cobre",
-    "600v",
-    "vivienda"
-],
+    tags: [
+        "superastic",
+        "plus",
+        "flexible",
+        "tablero"
+    ],
 
-brochure: "BUILDING",
-
-image: "assets/cables/tw.jpg"
-```
-
+    brochure: "SUPERASTIC"
 },
 
 {
-id: "ALUMINUM-XHHW",
+    id: "EXZHELLENT-GREEN-75",
 
-```
-family: "Construcción",
+    family: "Construcción",
 
-category: "Alimentadores",
+    category: "LSZH",
 
-name: "XHHW-2 Aluminio",
+    name: "Exzhellent Green 75°C",
 
-conductor: "Aluminio",
+    conductor: "Cobre",
 
-insulation: "XLPE",
+    insulation: "LSZH",
 
-voltage: "600 V",
+    voltage: "600 V",
 
-temperature: "90°C",
+    temperature: "75°C",
 
-installation: [
-    "Alimentadores",
-    "Canalizaciones",
-    "Acometidas"
-],
+    installation: [
+        "Edificios",
+        "Hospitales",
+        "Aeropuertos"
+    ],
 
-applications: [
-    "Edificios",
-    "Industria",
-    "Centros comerciales"
-],
+    applications: [
+        "Evacuación segura",
+        "Espacios públicos"
+    ],
 
-tags: [
-    "aluminio",
-    "xhhw",
-    "alimentador",
-    "acometida",
-    "600v"
-],
+    tags: [
+        "lszh",
+        "halogen free",
+        "green",
+        "hospital",
+        "seguridad"
+    ],
 
-brochure: "BUILDING",
+    brochure: "EXZHELLENT"
+},
 
-image: "assets/cables/xhhw-al.jpg"
-```
+{
+    id: "EXZHELLENT-GREEN-90",
 
+    family: "Construcción",
+
+    category: "LSZH",
+
+    name: "Exzhellent Green 90°C",
+
+    conductor: "Cobre",
+
+    insulation: "LSZH",
+
+    voltage: "600 V",
+
+    temperature: "90°C",
+
+    installation: [
+        "Hospitales",
+        "Centros comerciales",
+        "Edificios corporativos"
+    ],
+
+    applications: [
+        "Distribución eléctrica",
+        "Seguridad humana"
+    ],
+
+    tags: [
+        "lszh",
+        "halogen free",
+        "green",
+        "90c"
+    ],
+
+    brochure: "EXZHELLENT"
+},
+
+{
+    id: "XHHW2-CU",
+
+    family: "Construcción",
+
+    category: "Alimentadores",
+
+    name: "XHHW-2 Cobre",
+
+    conductor: "Cobre",
+
+    insulation: "XLPE",
+
+    voltage: "600 V",
+
+    temperature: "90°C",
+
+    installation: [
+        "Ductos",
+        "Canalizaciones",
+        "Bandejas"
+    ],
+
+    applications: [
+        "Alimentadores",
+        "Edificios",
+        "Industria"
+    ],
+
+    tags: [
+        "xhhw",
+        "xlpe",
+        "alimentador",
+        "cobre"
+    ],
+
+    brochure: "CONSTRUCCION"
+},
+
+{
+    id: "XHHW2-AL",
+
+    family: "Construcción",
+
+    category: "Alimentadores",
+
+    name: "XHHW-2 Aluminio",
+
+    conductor: "Aluminio",
+
+    insulation: "XLPE",
+
+    voltage: "600 V",
+
+    temperature: "90°C",
+
+    installation: [
+        "Acometidas",
+        "Alimentadores"
+    ],
+
+    applications: [
+        "Edificios",
+        "Centros comerciales"
+    ],
+
+    tags: [
+        "aluminio",
+        "xhhw",
+        "acometida",
+        "alimentador"
+    ],
+
+    brochure: "CONSTRUCCION"
+},
+
+{
+    id: "SERVICE-ENTRANCE",
+
+    family: "Construcción",
+
+    category: "Acometidas",
+
+    name: "Cable de Acometida",
+
+    conductor: "Aluminio",
+
+    insulation: "XLPE",
+
+    voltage: "600 V",
+
+    temperature: "90°C",
+
+    installation: [
+        "Aérea",
+        "Canalización"
+    ],
+
+    applications: [
+        "Acometidas residenciales",
+        "Acometidas comerciales"
+    ],
+
+    tags: [
+        "acometida",
+        "service",
+        "entrada",
+        "aluminio"
+    ],
+
+    brochure: "CONSTRUCCION"
 }
 
 ];
