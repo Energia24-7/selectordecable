@@ -1,57 +1,120 @@
 <!DOCTYPE html>
+
 <html lang="es">
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
 
-    <title>Selector Prysmian Ecuador</title>
+<meta
+ name="viewport"
+ content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/styles.css">
+<title>
+Selector Prysmian Ecuador
+</title>
+
+<link
+    rel="stylesheet"
+    href="css/styles.css">
 
 </head>
 
 <body>
 
-    <header>
+<header>
 
-        <h1>Selector de Cables Prysmian Ecuador</h1>
+```
+<h1>
+    Selector de Cables Prysmian Ecuador
+</h1>
+
+<p>
+    Asistente Inteligente de Selección
+</p>
+```
+
+</header>
+
+<div class="container">
+
+```
+<div class="left-panel">
+
+    <section class="search-section">
+
+        <h2>
+            Buscar Aplicación
+        </h2>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Ej: bomba trifásica 5.5 hp enterrada">
+
+        <button
+            id="searchButton">
+            Buscar
+        </button>
+
+        <div
+            id="searchResults">
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>
+            Árbol de Productos
+        </h2>
+
+        <div id="tree">
+        </div>
+
+    </section>
+
+</div>
+
+<div class="right-panel">
+
+    <h2>
+        Información
+    </h2>
+
+    <div id="info">
 
         <p>
-            Herramienta de selección por aplicación
+            Seleccione un producto.
         </p>
-
-    </header>
-
-    <div class="container">
-
-        <div class="tree-panel">
-
-            <h2>Mapa de Selección</h2>
-
-            <div id="tree"></div>
-
-        </div>
-
-        <div class="info-panel">
-
-            <h2>Información del Cable</h2>
-
-            <div id="info">
-
-                <p>
-                    Seleccione una categoría del árbol.
-                </p>
-
-            </div>
-
-        </div>
 
     </div>
 
-    <script src="js/data.js"></script>
-    <script src="js/app.js"></script>
+</div>
+```
+
+</div>
+
+<script type="module">
+
+import { generateTree }
+from './js/tree.js';
+
+import { initializeSearch }
+from './js/search.js';
+
+import {
+    initializeRecommendationEngine
+}
+from './js/recommendationEngine.js';
+
+generateTree();
+
+initializeSearch();
+
+initializeRecommendationEngine();
+
+</script>
 
 </body>
 
