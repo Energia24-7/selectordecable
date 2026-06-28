@@ -1,120 +1,83 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta
- name="viewport"
- content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-<title>
-Selector Prysmian Ecuador
-</title>
+    <title>Selector Prysmian Ecuador</title>
 
-<link
-    rel="stylesheet"
-    href="css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
 </head>
 
 <body>
 
-<header>
+    <header>
 
-```
-<h1>
-    Selector de Cables Prysmian Ecuador
-</h1>
+        <h1>Selector de Cables Prysmian Ecuador</h1>
 
-<p>
-    Asistente Inteligente de Selección
-</p>
-```
+        <p>Asistente Inteligente de Selección</p>
 
-</header>
+    </header>
 
-<div class="container">
+    <main class="container">
 
-```
-<div class="left-panel">
+        <section class="left-panel">
 
-    <section class="search-section">
+            <div class="search-panel">
 
-        <h2>
-            Buscar Aplicación
-        </h2>
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Ej: bomba trifásica 5.5 HP enterrada">
 
-        <input
-            type="text"
-            id="searchInput"
-            placeholder="Ej: bomba trifásica 5.5 hp enterrada">
+                <button id="searchButton">
+                    Buscar
+                </button>
 
-        <button
-            id="searchButton">
-            Buscar
-        </button>
+                <div id="searchResults"></div>
 
-        <div
-            id="searchResults">
-        </div>
+            </div>
 
-    </section>
+            <div class="tree-panel">
 
-    <section>
+                <h2>Catálogo</h2>
 
-        <h2>
-            Árbol de Productos
-        </h2>
+                <div id="tree"></div>
 
-        <div id="tree">
-        </div>
+            </div>
 
-    </section>
+        </section>
 
-</div>
+        <section class="right-panel">
 
-<div class="right-panel">
+            <h2>Información del Producto</h2>
 
-    <h2>
-        Información
-    </h2>
+            <div id="info">
 
-    <div id="info">
+                <p>
+                    Seleccione un producto del árbol
+                    o utilice el buscador.
+                </p>
 
-        <p>
-            Seleccione un producto.
-        </p>
+            </div>
 
-    </div>
+        </section>
 
-</div>
-```
+    </main>
 
-</div>
+    <script type="module">
 
-<script type="module">
+        import { generateTree }
+            from './js/tree.js';
 
-import { generateTree }
-from './js/tree.js';
+        generateTree();
 
-import { initializeSearch }
-from './js/search.js';
-
-import {
-    initializeRecommendationEngine
-}
-from './js/recommendationEngine.js';
-
-generateTree();
-
-initializeSearch();
-
-initializeRecommendationEngine();
-
-</script>
+    </script>
 
 </body>
 
