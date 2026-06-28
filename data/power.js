@@ -1,582 +1,423 @@
 export const powerProducts = [
 
 {
-id: "THHN-THWN2",
+    id: "N2XY",
 
-```
-family: "Potencia",
+    family: "Potencia",
 
-category: "Edificaciones",
+    category: "Baja Tensión",
 
-name: "THHN / THWN-2",
+    name: "N2XY",
 
-conductor: "Cobre",
+    conductor: "Cobre",
 
-insulation: "PVC + Nylon",
+    insulation: "XLPE",
 
-voltage: "600 V",
+    voltage: "0.6/1 kV",
 
-temperature: "90°C",
+    temperature: "90°C",
 
-installation: [
-    "Tubería EMT",
-    "PVC",
-    "Canalizaciones"
-],
+    installation: [
+        "Ductos",
+        "Bandejas",
+        "Directamente enterrado"
+    ],
 
-applications: [
-    "Residencial",
-    "Comercial",
-    "Tableros"
-],
+    applications: [
+        "Distribución de potencia",
+        "Industria",
+        "Edificaciones"
+    ],
 
-tags: [
-    "thhn",
-    "thwn",
-    "edificacion",
-    "tablero",
-    "cobre",
-    "600v"
-],
+    tags: [
+        "n2xy",
+        "potencia",
+        "xlpe",
+        "enterrado",
+        "industrial"
+    ],
 
-brochure: "THHN"
-```
-
+    brochure: "POWER"
 },
 
 {
-id: "XHHW2-CU",
+    id: "RZ1K",
 
-```
-family: "Potencia",
+    family: "Potencia",
 
-category: "Alimentadores",
+    category: "LSZH",
 
-name: "XHHW-2 Cobre",
+    name: "RZ1-K",
 
-conductor: "Cobre",
+    conductor: "Cobre",
 
-insulation: "XLPE",
+    insulation: "XLPE LSZH",
 
-voltage: "600 V",
+    voltage: "0.6/1 kV",
 
-temperature: "90°C",
+    temperature: "90°C",
 
-installation: [
-    "Ductos",
-    "Bandejas",
-    "Canalizaciones"
-],
+    installation: [
+        "Hospitales",
+        "Aeropuertos",
+        "Centros comerciales"
+    ],
 
-applications: [
-    "Alimentadores",
-    "Industria",
-    "Centros comerciales"
-],
+    applications: [
+        "Distribución eléctrica",
+        "Seguridad humana"
+    ],
 
-tags: [
-    "xhhw",
-    "xlpe",
-    "alimentador",
-    "cobre"
-],
+    tags: [
+        "lszh",
+        "halogen free",
+        "seguridad",
+        "hospital"
+    ],
 
-brochure: "BUILDING"
-```
-
+    brochure: "EXZHELLENT"
 },
 
 {
-id: "XHHW2-AL",
+    id: "ARMORED-XLPE",
 
-```
-family: "Potencia",
+    family: "Potencia",
 
-category: "Alimentadores",
+    category: "Cable Armado",
 
-name: "XHHW-2 Aluminio",
+    name: "Cable Armado XLPE",
 
-conductor: "Aluminio",
+    conductor: "Cobre",
 
-insulation: "XLPE",
+    insulation: "XLPE",
 
-voltage: "600 V",
+    armor: "Acero galvanizado",
 
-temperature: "90°C",
+    voltage: "0.6/1 kV",
 
-installation: [
-    "Acometidas",
-    "Ductos"
-],
+    temperature: "90°C",
 
-applications: [
-    "Alimentadores principales",
-    "Edificios"
-],
+    installation: [
+        "Directamente enterrado",
+        "Exterior",
+        "Industria"
+    ],
 
-tags: [
-    "aluminio",
-    "xhhw",
-    "acometida",
-    "alimentador"
-],
+    applications: [
+        "Distribución de potencia",
+        "Minería",
+        "Infraestructura"
+    ],
 
-brochure: "BUILDING"
-```
+    tags: [
+        "armado",
+        "enterrado",
+        "industrial",
+        "mineria"
+    ],
 
+    brochure: "POWER"
 },
 
 {
-id: "N2XY",
+    id: "CONTROL-XLPE",
 
-```
-family: "Potencia",
+    family: "Potencia",
 
-category: "Industrial",
+    category: "Control",
 
-name: "N2XY",
+    name: "Cable de Control XLPE",
 
-conductor: "Cobre",
+    conductor: "Cobre",
 
-insulation: "XLPE",
+    insulation: "XLPE",
 
-voltage: "0.6/1 kV",
+    voltage: "600 V",
 
-temperature: "90°C",
+    temperature: "90°C",
 
-installation: [
-    "Enterrado",
-    "Ductos",
-    "Bandejas"
-],
+    installation: [
+        "Canalizaciones",
+        "Bandejas"
+    ],
 
-applications: [
-    "Distribución BT",
-    "Motores",
-    "Industria"
-],
+    applications: [
+        "PLC",
+        "Automatización",
+        "Control industrial"
+    ],
 
-tags: [
-    "n2xy",
-    "xlpe",
-    "enterrado",
-    "industrial",
-    "motor"
-],
+    tags: [
+        "control",
+        "plc",
+        "automatizacion"
+    ],
 
-brochure: "POWER"
-```
-
+    brochure: "INDUSTRIAL"
 },
 
 {
-id: "RZ1K",
+    id: "INSTRUMENTATION",
 
-```
-family: "Potencia",
+    family: "Potencia",
 
-category: "LSZH",
+    category: "Instrumentación",
 
-name: "RZ1-K",
+    name: "Cable de Instrumentación",
 
-conductor: "Cobre",
+    conductor: "Cobre",
 
-insulation: "XLPE LSZH",
+    insulation: "PE",
 
-voltage: "0.6/1 kV",
+    shielding: "Foil",
 
-temperature: "90°C",
+    voltage: "300 V",
 
-installation: [
-    "Hospitales",
-    "Aeropuertos",
-    "Centros comerciales"
-],
+    temperature: "75°C",
 
-applications: [
-    "Distribución BT",
-    "Seguridad humana"
-],
+    installation: [
+        "Industria",
+        "Refinerías",
+        "Plantas"
+    ],
 
-tags: [
-    "lszh",
-    "halogen free",
-    "rz1",
-    "seguridad"
-],
+    applications: [
+        "4-20 mA",
+        "SCADA",
+        "Instrumentación"
+    ],
 
-brochure: "EXZHELLENT"
-```
+    tags: [
+        "instrumentacion",
+        "scada",
+        "4-20ma",
+        "senal"
+    ],
 
+    brochure: "INDUSTRIAL"
 },
 
 {
-id: "ARMORED-BT",
+    id: "VFD",
 
-```
-family: "Potencia",
+    family: "Potencia",
 
-category: "Cable Armado",
+    category: "Variadores",
 
-name: "Cable Armado XLPE BT",
+    name: "Cable para VFD",
 
-conductor: "Cobre",
+    conductor: "Cobre",
 
-insulation: "XLPE",
+    insulation: "XLPE",
 
-armor: "Acero galvanizado",
+    shielding: "Malla de cobre",
 
-voltage: "0.6/1 kV",
+    voltage: "0.6/1 kV",
 
-temperature: "90°C",
+    temperature: "90°C",
 
-installation: [
-    "Directamente enterrado",
-    "Exterior"
-],
+    installation: [
+        "Variadores",
+        "Motores"
+    ],
 
-applications: [
-    "Industria",
-    "Minería",
-    "Infraestructura"
-],
+    applications: [
+        "Bombas",
+        "Ventiladores",
+        "Motores"
+    ],
 
-tags: [
-    "armado",
-    "armored",
-    "enterrado",
-    "industrial"
-],
+    tags: [
+        "vfd",
+        "variador",
+        "motor",
+        "bomba"
+    ],
 
-brochure: "POWER"
-```
-
+    brochure: "INDUSTRIAL"
 },
 
 {
-id: "CONTROL-XLPE",
+    id: "SUBMERSIBLE",
 
-```
-family: "Potencia",
+    family: "Potencia",
 
-category: "Control",
+    category: "Bombas",
 
-name: "Cable de Control XLPE",
+    name: "Cable para Bomba Sumergible",
 
-conductor: "Cobre",
+    conductor: "Cobre",
 
-insulation: "XLPE",
+    insulation: "EPR",
 
-voltage: "600 V",
+    jacket: "CPE",
 
-temperature: "90°C",
+    voltage: "600 V",
 
-installation: [
-    "Bandejas",
-    "Canalizaciones"
-],
+    temperature: "90°C",
 
-applications: [
-    "PLC",
-    "Control industrial",
-    "Automatización"
-],
+    installation: [
+        "Pozos",
+        "Bombas sumergibles"
+    ],
 
-tags: [
-    "control",
-    "plc",
-    "automatizacion"
-],
+    applications: [
+        "Agua potable",
+        "Riego",
+        "Industria"
+    ],
 
-brochure: "INDUSTRIAL"
-```
+    tags: [
+        "sumergible",
+        "bomba",
+        "pozo",
+        "agua"
+    ],
 
+    brochure: "SUBMERSIBLE"
 },
 
 {
-id: "INSTRUMENTATION-PE",
+    id: "MV-5KV",
 
-```
-family: "Potencia",
+    family: "Potencia",
 
-category: "Instrumentación",
+    category: "Media Tensión",
 
-name: "Cable de Instrumentación",
+    name: "Cable MT 5 kV",
 
-conductor: "Cobre",
+    conductor: "Cobre",
 
-insulation: "PE",
+    insulation: "XLPE",
 
-shielding: "Foil",
+    voltage: "5 kV",
 
-voltage: "300 V",
+    temperature: "90°C",
 
-installation: [
-    "Plantas industriales",
-    "Refinerías"
-],
+    installation: [
+        "Subestaciones",
+        "Industria"
+    ],
 
-applications: [
-    "4-20mA",
-    "Instrumentación",
-    "SCADA"
-],
+    applications: [
+        "Distribución MT"
+    ],
 
-tags: [
-    "instrumentacion",
-    "scada",
-    "4-20ma",
-    "senal"
-],
+    tags: [
+        "5kv",
+        "media tension",
+        "subestacion"
+    ],
 
-brochure: "INDUSTRIAL"
-```
-
+    brochure: "MT"
 },
 
 {
-id: "VFD-CABLE",
+    id: "MV-15KV",
 
-```
-family: "Potencia",
+    family: "Potencia",
 
-category: "Variadores",
+    category: "Media Tensión",
 
-name: "Cable para VFD",
+    name: "Cable MT 15 kV",
 
-conductor: "Cobre",
+    conductor: "Cobre o Aluminio",
 
-insulation: "XLPE",
+    insulation: "XLPE",
 
-shielding: "Malla cobre",
+    voltage: "15 kV",
 
-voltage: "0.6/1 kV",
+    temperature: "90°C",
 
-temperature: "90°C",
+    installation: [
+        "Ductos",
+        "Enterrado"
+    ],
 
-installation: [
-    "Variadores",
-    "Motores"
-],
+    applications: [
+        "Distribución MT",
+        "Parques industriales"
+    ],
 
-applications: [
-    "VFD",
-    "Bombas",
-    "Ventiladores",
-    "Transportadores"
-],
+    tags: [
+        "15kv",
+        "media tension",
+        "industrial"
+    ],
 
-tags: [
-    "vfd",
-    "variador",
-    "motor",
-    "bomba",
-    "emc"
-],
-
-brochure: "INDUSTRIAL"
-```
-
+    brochure: "MT"
 },
 
 {
-id: "MV-5KV",
+    id: "MV-25KV",
 
-```
-family: "Potencia",
+    family: "Potencia",
 
-category: "Media Tensión",
+    category: "Media Tensión",
 
-name: "Cable MT 5 kV",
+    name: "Cable MT 25 kV",
 
-conductor: "Cobre",
+    conductor: "Cobre o Aluminio",
 
-insulation: "XLPE",
+    insulation: "XLPE",
 
-voltage: "5 kV",
+    voltage: "25 kV",
 
-temperature: "90°C",
+    temperature: "90°C",
 
-installation: [
-    "Subestaciones",
-    "Distribución MT"
-],
+    installation: [
+        "Subtransmisión",
+        "Distribución"
+    ],
 
-applications: [
-    "Industria",
-    "Utilities"
-],
+    applications: [
+        "Utilities",
+        "Industria"
+    ],
 
-tags: [
-    "5kv",
-    "media tension",
-    "subestacion"
-],
+    tags: [
+        "25kv",
+        "media tension",
+        "utility"
+    ],
 
-brochure: "MT"
-```
-
+    brochure: "MT"
 },
 
 {
-id: "MV-15KV",
+    id: "MV-35KV",
 
-```
-family: "Potencia",
+    family: "Potencia",
 
-category: "Media Tensión",
+    category: "Media Tensión",
 
-name: "Cable MT 15 kV",
+    name: "Cable MT 35 kV",
 
-conductor: "Cobre o Aluminio",
+    conductor: "Cobre o Aluminio",
 
-insulation: "XLPE",
+    insulation: "XLPE",
 
-voltage: "15 kV",
+    voltage: "35 kV",
 
-temperature: "90°C",
+    temperature: "90°C",
 
-installation: [
-    "Enterrado",
-    "Ductos"
-],
+    installation: [
+        "Subtransmisión",
+        "Infraestructura"
+    ],
 
-applications: [
-    "Redes MT",
-    "Parques industriales",
-    "Plantas solares"
-],
+    applications: [
+        "Utilities",
+        "Grandes plantas"
+    ],
 
-tags: [
-    "15kv",
-    "media tension",
-    "redes"
-],
+    tags: [
+        "35kv",
+        "media tension",
+        "subtransmision"
+    ],
 
-brochure: "MT"
-```
-
-},
-
-{
-id: "MV-25KV",
-
-```
-family: "Potencia",
-
-category: "Media Tensión",
-
-name: "Cable MT 25 kV",
-
-conductor: "Cobre o Aluminio",
-
-insulation: "XLPE",
-
-voltage: "25 kV",
-
-temperature: "90°C",
-
-installation: [
-    "Distribución",
-    "Subtransmisión"
-],
-
-applications: [
-    "Utilities",
-    "Industria pesada"
-],
-
-tags: [
-    "25kv",
-    "media tension",
-    "utility"
-],
-
-brochure: "MT"
-```
-
-},
-
-{
-id: "MV-35KV",
-
-```
-family: "Potencia",
-
-category: "Media Tensión",
-
-name: "Cable MT 35 kV",
-
-conductor: "Cobre o Aluminio",
-
-insulation: "XLPE",
-
-voltage: "35 kV",
-
-temperature: "90°C",
-
-installation: [
-    "Subtransmisión",
-    "Infraestructura"
-],
-
-applications: [
-    "Utilities",
-    "Grandes plantas industriales"
-],
-
-tags: [
-    "35kv",
-    "media tension",
-    "subtransmision"
-],
-
-brochure: "MT"
-```
-
-},
-
-{
-id: "SUBMERSIBLE-600V",
-
-```
-family: "Potencia",
-
-category: "Bombas",
-
-name: "Cable para Bomba Sumergible",
-
-conductor: "Cobre",
-
-insulation: "EPR",
-
-jacket: "CPE",
-
-voltage: "600 V",
-
-temperature: "90°C",
-
-installation: [
-    "Pozos",
-    "Bombas sumergibles"
-],
-
-applications: [
-    "Agua potable",
-    "Riego",
-    "Industria"
-],
-
-tags: [
-    "sumergible",
-    "bomba",
-    "pozo",
-    "agua"
-],
-
-brochure: "SUBMERSIBLE"
-```
-
+    brochure: "MT"
 }
 
 ];
